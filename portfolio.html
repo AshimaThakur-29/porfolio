@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="portfolio.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/53acf9d3e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-nav">
+        <h2>ashima thakur</h2>
+      </div>
+
+      <div class="hide-nav">
+        <button onclick="mybtn()" class="dropbtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skill">skill</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li><a href="#Intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="Intro" id="Intro">
+      <div class="left-Intro">
+        <h3>ASHIMA THAKUR</h3>
+        <h1>I'm a <span>Web Designer</span></h1>
+        <p>
+          I want to introduce myself and my skills in a way that is clear,
+          concise, and catches the reader's attention.
+        </p>
+        <a class="resume" href="./portfolio.html" download="">Download CV</a>
+      </div>
+      <div class="right-Intro">
+        <img
+          src="./image.jpg"
+          alt="image"
+        />
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="main">
+        <h2>About Me</h2>
+        <p>
+          Proficiency in HTML, CSS, and JavaScript is essential. Familiarity
+          with responsive design principles, ensuring websites look good on all
+          devices, is also key.
+        </p>
+      </div>
+    </section>
+    <section class="skill" id="skill">
+      <div class="tech">
+        <h2>SKILLS</h2>
+        <ul>
+          <li>
+            <button><a>HTML</a></button>
+          </li>
+          <li>
+            <button><a>CSS</a></button>
+          </li>
+          <li>
+            <button><a>JavaScript</a></button>
+          </li>
+          <li>
+            <button><a>React</a></button>
+          </li>
+          <li>
+            <button><a>BootStrap</a></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="myself">
+      <div class="self">
+        <h3>🎓 Education</h3>
+        <ul>
+          <li>
+            <strong>Bachelor of Computer Science (B.sc)</strong> - Pursuing from
+            A.B College Pathonkot
+          </li>
+          <li><strong>12th (PSEB)</strong> - Non-Medical Stream</li>
+          <li><strong>10th (PSEB)</strong> - General Education</li>
+        </ul>
+
+        <br />
+
+        <h3>📜 Training & Certification</h3>
+        <ul>
+          <li>
+            <strong>MERN Stack Training</strong> - Cyber Core Technologies,
+            Mohali (3 Months)
+          </li>
+          <li>Responsive Web Design</li>
+          <li>JavaScript Essentials</li>
+        </ul>
+
+        <br />
+        <h3>💡Hobbies & Interests</h3>
+        <ul>
+          <li>Exploring new web technologies</li>
+          <li>Gaming and streaming</li>
+          <li>Designing UI/UX mockups</li>
+          <li>Dancing and Music Listening</li>
+        </ul>
+
+        <br />
+
+        <h3>🌐 Languages Known</h3>
+        <p>English, Hindi, Punjabi</p>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="click">
+        <h2>CONTACT WITH US:</h2>
+        <p>
+          📧 Email:
+          <a href="mailto:">thakurashima23@gmail.com</a>
+        </p>
+        <p>
+          📱 WhatsApp:
+          <a href="">Click to Chat</a>
+        </p>
+        <p>📞 Mobile: qyw727q9e92-0e</p>
+      </div>
+    </section>
+    <footer>&copy; 2025 Ashima Thakur. All rights reserved.</footer>
+  </body>
+  <script>
+    function mybtn() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+ 
+</html>
