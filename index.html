@@ -85,7 +85,39 @@
           </li>
         </ul>
       </div>
+      <div class="Project">
+        <h1>Projects</h1>
+        <div class="project1">
+          <h3>Project 1: Job-Portial Clone</h3>
+         <p> I made a Job-Portial clone and responsive it.</p>
+         <p><strong>tech Used :</strong> HTML,CSS,React.</p>
+         <button><a href="https://job-portial-1bkb.vercel.app/">Job-Portial</a></button>
+
+        </div>
+        <div class="project1">
+           <h3>Project 2: Portfolio Website</h3>
+         <p> This portfolio! Built with clean, responsive design and dark theme styling using HTML and CSS.</p>
+         <p><strong>tech Used :</strong> HTML,CSS,JavaScript.</p>
+        <button><a href="https://job-portial-1bkb.vercel.app/">Portfolio</a></button>
+
+        </div>
+          <div class="project1">
+           <h3>Project 3: food-meal website</h3>
+         <p>Create a Simple food-meal site with the help of API.</p>
+         <p><strong>tech Used :</strong> HTML,CSS,React,JavaScript.</p>
+           <button><a href="https://food-meal-emtd.vercel.app/">Food-Meal</a></button>
+
+        </div>
+          <div class="project1">
+           <h3>Project 4:Hyper-Website Clone</h3>
+         <p> I made a Hyper-Website  Built with clean, responsive design and dark theme.</p>
+         <p><strong>tech Used :</strong> HTML,CSS,JavaScript,React.</p>
+         <button><a href="https://job-portial-1bkb.vercel.app/">Hyper-Website </a></button>
+
+        </div>
+      </div>
     </section>
+    
     <section class="myself">
       <div class="self">
         <h3>🎓 Education</h3>
@@ -103,7 +135,7 @@
         <h3>📜 Training & Certification</h3>
         <ul>
           <li>
-            <strong>MERN Stack Training</strong> - Cyber Core Technologies,
+            <strong>Web Designing Training</strong> - Cyber Core Technologies,
             Mohali (3 Months)
           </li>
           <li>Responsive Web Design</li>
@@ -145,6 +177,17 @@
     function mybtn() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
+  const links = document.querySelectorAll(".right-nav ul li a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      // Remove active from all
+      links.forEach(l => l.classList.remove("active"));
+      // Add active to clicked
+      this.classList.add("active");
+    });
+  });
+
   </script>
  
 </html>

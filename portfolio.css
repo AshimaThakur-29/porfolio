@@ -82,14 +82,14 @@ button {
   background-color: red;
   font-weight: bold;
   border-radius: 4px;
-
 }
-
 .right-nav ul li a.active {
-  background-color: red;
-  font-weight: bold;
-  border-radius: 4px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 12px;
 }
+
 
 .Intro {
   display: flex;
@@ -106,6 +106,7 @@ button {
 }
 
 .left-Intro span,
+.Project h1,
 .main h2,
 .tech h2 {
   color: red;
@@ -165,7 +166,7 @@ h3 {
 }
 
 .about,
-.skill,
+
 .contact {
   display: flex;
   justify-content: center;
@@ -173,12 +174,22 @@ h3 {
   text-align: center;
   margin-top: 50px;
 }
-
+.skill{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
 .main,
 .tech,
 .self,
-.click {
-  width: 900px;
+.click,
+.project1
+ {
+    max-width: 900px;
+  width: 100%;
   padding: 40px;
   border: 1px solid white;
   border-radius: 20px;
@@ -186,9 +197,37 @@ h3 {
   margin-top: 40px;
 
 }
+.Project h1{
+  padding: 60px 0px;
+  
+}
+.project1{
+  text-align: justify;
+}
+.project1 p{
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.project1 h3{
+  font-size: 24px;
+  color: red;
+}
+.project1 button{
+  padding: 14px 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: red;
+}
+.project1 a{
+  font-size: 16px;
+  color: white;
+}
 
 .main:hover,
 .tech:hover,
+.project1:hover,
 .tech button:hover,
 .self:hover {
   box-shadow: 0px 2px 15px white;
@@ -273,8 +312,8 @@ footer {
   .main,
   .tech,
   .self,
+  .project1,
   .click {
-    width: 780px;
     padding: 30px;
   }
 
@@ -310,8 +349,9 @@ footer {
   .main,
   .tech,
   .self,
+  .project1,
   .click {
-    width: 650px;
+
     padding: 10px;
   }
 
@@ -337,55 +377,7 @@ footer {
     display: none;
   }
 
-  /* .hide-nav {
-    display: block;
-  }
 
-  .hide-nav ul {
-    display: none;
-  }
-
-  .hide-nav i {
-    color: red;
-
-  }
-
-  .hide-nav button {
-    padding: 4px 8px;
-    margin: 4px 10px;
-    border-radius: 10px;
-    font-size: 20px;
-  }
-
-  .hide-nav {
-    position: relative;
-    display: inline-block;
-  }
-
-  .content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  .content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .content a:hover {
-    background-color: #f1f1f1
-  }
-
-  .mystyle {
-    display: block;
-  }
- */
  .dropbtn {
   background-color:red;
   color: white;
@@ -431,7 +423,7 @@ footer {
   .tech,
   .self,
   .click {
-    width: 500px;
+  
     padding: 10px;
   }
 
@@ -440,15 +432,6 @@ footer {
     margin-bottom: 15px;
     font-size: 25px;
   }
-
-  .main,
-  .tech,
-  .self,
-  .click {
-    width: 320px;
-    padding: 8px;
-  }
-
   .left-Intro span {
     font-size: 30px;
   }
@@ -463,11 +446,10 @@ footer {
   .click h2 {
     font-size: 18px;
   }
-}
-@media (max-width: 680px){
   .main,
   .tech,
   .self,
+  .project1,
   .click {
     width: 270px;
     padding: 8px;
@@ -484,5 +466,20 @@ footer {
     .click p{
       padding-left: 6px;
       padding-bottom: 8px;
+    } 
+    .Project h1{
+    font-size: 30px;
+    padding: 30px 0px ;
     }
+    .project1{
+    text-align: center;
+  
+    }
+    .project1 h3{
+    font-size: 20px;}
+    .project1 p{
+    font-size: 16px;
+    margin-bottom: 6px;
+
+}
 }
