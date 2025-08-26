@@ -196,6 +196,7 @@ h3 {
   background-color: #22222dc2;
   margin-top: 40px;
 
+
 }
 .Project h1{
   padding: 60px 0px;
@@ -451,7 +452,7 @@ footer {
   .self,
   .project1,
   .click {
-    width: 270px;
+    width:400px;
     padding: 8px;
   }
   .left-Intro p, .main p{

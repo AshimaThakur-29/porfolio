@@ -18,14 +18,15 @@
       </div>
 
       <div class="hide-nav">
-        <button onclick="mybtn()" class="dropbtn">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <button onclick="mybtn()" class="dropbtn">
+  <i id="menuIcon" class="fa-solid fa-bars"></i>
+</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skill">skill</a>
           <a href="#contact">Contact</a>
+          <a href="#myself">More</a>
         </div>
       </div>
       <div class="right-nav">
@@ -33,6 +34,7 @@
           <li><a href="#Intro">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skill</a></li>
+           <li><a href="#myself">More</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -87,38 +89,39 @@
       </div>
       <div class="Project">
         <h1>Projects</h1>
+         <div class="project1">
+           <h3>Project 4:Hyper-Website Clone</h3>
+         <p> I made a Hyper-Website  Built with clean, responsive design and dark theme.</p>
+         <p><strong>tech Used :</strong> HTML,CSS,JavaScript,React.</p>
+         <button><a href="https://hyper-website-eight.vercel.app/" target="_blank">Hyper-Website </a></button>
+
+        </div>
         <div class="project1">
           <h3>Project 1: Job-Portial Clone</h3>
          <p> I made a Job-Portial clone and responsive it.</p>
          <p><strong>tech Used :</strong> HTML,CSS,React.</p>
-         <button><a href="https://job-portial-1bkb.vercel.app/">Job-Portial</a></button>
+         <button><a href="https://job-portial-1bkb.vercel.app/" target="_blank">Job-Portial</a></button>
 
         </div>
         <div class="project1">
            <h3>Project 2: Portfolio Website</h3>
          <p> This portfolio! Built with clean, responsive design and dark theme styling using HTML and CSS.</p>
          <p><strong>tech Used :</strong> HTML,CSS,JavaScript.</p>
-        <button><a href="https://porfolio-fjj8.vercel.app/">Portfolio</a></button>
+        <button><a href="https://porfolio-fjj8.vercel.app/" target="_blank">Portfolio</a></button>
 
         </div>
           <div class="project1">
            <h3>Project 3: food-meal website</h3>
          <p>Create a Simple food-meal site with the help of API.</p>
          <p><strong>tech Used :</strong> HTML,CSS,React,JavaScript.</p>
-           <button><a href="https://food-meal-emtd.vercel.app/">Food-Meal</a></button>
+           <button><a href="https://food-meal-emtd.vercel.app/" target="_blank">Food-Meal</a></button>
 
         </div>
-          <div class="project1">
-           <h3>Project 4:Hyper-Website Clone</h3>
-         <p> I made a Hyper-Website  Built with clean, responsive design and dark theme.</p>
-         <p><strong>tech Used :</strong> HTML,CSS,JavaScript,React.</p>
-         <button><a href="https://hyper-website-eight.vercel.app/">Hyper-Website </a></button>
-
-        </div>
+         
       </div>
     </section>
     
-    <section class="myself">
+    <section class="myself" id="myself">
       <div class="self">
         <h3>🎓 Education</h3>
         <ul>
@@ -175,18 +178,44 @@
   </body>
   <script>
     function mybtn() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-  const links = document.querySelectorAll(".right-nav ul li a");
+  const dropdown = document.getElementById("myDropdown");
+  const icon = document.getElementById("menuIcon");
 
-  links.forEach(link => {
-    link.addEventListener("click", function () {
-      // Remove active from all
-      links.forEach(l => l.classList.remove("active"));
-      // Add active to clicked
-      this.classList.add("active");
-    });
+  dropdown.classList.toggle("show");
+
+  // toggle icon
+  if (dropdown.classList.contains("show")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times"); // close icon
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars"); // back to hamburger
+  }
+}
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".right-nav ul li a");
+
+  window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
   });
+});
+
+
+ 
 
   </script>
  
