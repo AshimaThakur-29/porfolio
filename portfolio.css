@@ -452,7 +452,7 @@ footer {
   .self,
   .project1,
   .click {
-    width:400px;
+    width:350px;
     padding: 8px;
   }
   .left-Intro p, .main p{
@@ -482,5 +482,15 @@ footer {
     font-size: 16px;
     margin-bottom: 6px;
 
+}
+
+}
+@media (max-width:480px) {
+.project1 button{
+  padding: 8px 10px;
+}
+.project1 p{
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 }
